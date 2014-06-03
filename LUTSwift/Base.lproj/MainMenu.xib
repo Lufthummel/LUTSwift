@@ -14,7 +14,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="LUTSwift" customModuleProvider="target">
             <connections>
-                <outlet property="lut3DSceneView" destination="L1p-Bq-BPT" id="Dsa-VX-cHT"/>
+                <outlet property="lut3DSceneView" destination="1rF-Ov-6fk" id="361-ku-UV3"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -677,16 +677,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <sceneView loops="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1p-Bq-BPT" customClass="LUTPreviewSceneView">
-                        <rect key="frame" x="-8" y="-7" width="494" height="372"/>
+                    <sceneView loops="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1rF-Ov-6fk" customClass="LUTPreviewSceneView">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </sceneView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="L1p-Bq-BPT" secondAttribute="bottom" constant="-7" id="g4V-4s-9wv"/>
-                    <constraint firstItem="L1p-Bq-BPT" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="-8" id="h39-1E-Geb"/>
-                    <constraint firstAttribute="trailing" secondItem="L1p-Bq-BPT" secondAttribute="trailing" constant="-6" id="qzX-k8-OFj"/>
-                    <constraint firstItem="L1p-Bq-BPT" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="-5" id="v5K-bo-E6O"/>
+                    <constraint firstAttribute="bottom" secondItem="1rF-Ov-6fk" secondAttribute="bottom" id="Dc1-hH-T2Z"/>
+                    <constraint firstItem="1rF-Ov-6fk" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="E3h-ST-Kbm"/>
+                    <constraint firstItem="1rF-Ov-6fk" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="Qfk-CB-9UD"/>
+                    <constraint firstAttribute="trailing" secondItem="1rF-Ov-6fk" secondAttribute="trailing" id="rrW-hi-WoU"/>
                 </constraints>
             </view>
         </window>
