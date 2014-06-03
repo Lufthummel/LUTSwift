@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC86FB2AF8C8489C916E56E4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494B5DAFC7749A7B9DAAD85 /* libPods.a */; };
+		F24AF151193E1E8700FD6BA1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AF150193E1E8700FD6BA1 /* main.swift */; };
+		F24AF153193E1E8700FD6BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AF152193E1E8700FD6BA1 /* AppDelegate.swift */; };
+		F24AF155193E1E8700FD6BA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24AF154193E1E8700FD6BA1 /* Images.xcassets */; };
+		F24AF158193E1E8700FD6BA1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24AF156193E1E8700FD6BA1 /* MainMenu.xib */; };
+		F24AF164193E1E8700FD6BA1 /* LUTSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AF163193E1E8700FD6BA1 /* LUTSwiftTests.swift */; };
+		F275A4DD193E269B00E160A3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F275A4DC193E269B00E160A3 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F24AF15E193E1E8700FD6BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F24AF143193E1E8700FD6BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F24AF14A193E1E8700FD6BA1;
+			remoteInfo = LUTSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54CEB27E2967448CA0C8E650 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		9494B5DAFC7749A7B9DAAD85 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24AF14B193E1E8700FD6BA1 /* LUTSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUTSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24AF14F193E1E8700FD6BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24AF150193E1E8700FD6BA1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F24AF152193E1E8700FD6BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F24AF154193E1E8700FD6BA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F24AF157193E1E8700FD6BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F24AF15D193E1E8700FD6BA1 /* LUTSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LUTSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24AF162193E1E8700FD6BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24AF163193E1E8700FD6BA1 /* LUTSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTSwiftTests.swift; sourceTree = "<group>"; };
+		F275A4DB193E25F900E160A3 /* LUTSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LUTSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		F275A4DC193E269B00E160A3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F24AF148193E1E8700FD6BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F275A4DD193E269B00E160A3 /* AppKit.framework in Frameworks */,
+				EC86FB2AF8C8489C916E56E4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24AF15A193E1E8700FD6BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD3991A971864332A1862130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F275A4DC193E269B00E160A3 /* AppKit.framework */,
+				9494B5DAFC7749A7B9DAAD85 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F24AF142193E1E8700FD6BA1 = {
+			isa = PBXGroup;
+			children = (
+				F24AF14D193E1E8700FD6BA1 /* LUTSwift */,
+				F24AF160193E1E8700FD6BA1 /* LUTSwiftTests */,
+				F24AF14C193E1E8700FD6BA1 /* Products */,
+				54CEB27E2967448CA0C8E650 /* Pods.xcconfig */,
+				BD3991A971864332A1862130 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F24AF14C193E1E8700FD6BA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F24AF14B193E1E8700FD6BA1 /* LUTSwift.app */,
+				F24AF15D193E1E8700FD6BA1 /* LUTSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F24AF14D193E1E8700FD6BA1 /* LUTSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F24AF152193E1E8700FD6BA1 /* AppDelegate.swift */,
+				F24AF154193E1E8700FD6BA1 /* Images.xcassets */,
+				F24AF156193E1E8700FD6BA1 /* MainMenu.xib */,
+				F24AF14E193E1E8700FD6BA1 /* Supporting Files */,
+				F275A4DB193E25F900E160A3 /* LUTSwift-Bridging-Header.h */,
+			);
+			path = LUTSwift;
+			sourceTree = "<group>";
+		};
+		F24AF14E193E1E8700FD6BA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F24AF14F193E1E8700FD6BA1 /* Info.plist */,
+				F24AF150193E1E8700FD6BA1 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F24AF160193E1E8700FD6BA1 /* LUTSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				F24AF163193E1E8700FD6BA1 /* LUTSwiftTests.swift */,
+				F24AF161193E1E8700FD6BA1 /* Supporting Files */,
+			);
+			path = LUTSwiftTests;
+			sourceTree = "<group>";
+		};
+		F24AF161193E1E8700FD6BA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F24AF162193E1E8700FD6BA1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F24AF14A193E1E8700FD6BA1 /* LUTSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24AF167193E1E8700FD6BA1 /* Build configuration list for PBXNativeTarget "LUTSwift" */;
+			buildPhases = (
+				5678D26FAE9747DCAE407F8D /* Check Pods Manifest.lock */,
+				F24AF147193E1E8700FD6BA1 /* Sources */,
+				F24AF148193E1E8700FD6BA1 /* Frameworks */,
+				F24AF149193E1E8700FD6BA1 /* Resources */,
+				0BE60E8AC75B4DD5837F353F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LUTSwift;
+			productName = LUTSwift;
+			productReference = F24AF14B193E1E8700FD6BA1 /* LUTSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F24AF15C193E1E8700FD6BA1 /* LUTSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24AF16A193E1E8700FD6BA1 /* Build configuration list for PBXNativeTarget "LUTSwiftTests" */;
+			buildPhases = (
+				F24AF159193E1E8700FD6BA1 /* Sources */,
+				F24AF15A193E1E8700FD6BA1 /* Frameworks */,
+				F24AF15B193E1E8700FD6BA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F24AF15F193E1E8700FD6BA1 /* PBXTargetDependency */,
+			);
+			name = LUTSwiftTests;
+			productName = LUTSwiftTests;
+			productReference = F24AF15D193E1E8700FD6BA1 /* LUTSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F24AF143193E1E8700FD6BA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Greg Cotten";
+				TargetAttributes = {
+					F24AF14A193E1E8700FD6BA1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F24AF15C193E1E8700FD6BA1 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F24AF14A193E1E8700FD6BA1;
+					};
+				};
+			};
+			buildConfigurationList = F24AF146193E1E8700FD6BA1 /* Build configuration list for PBXProject "LUTSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F24AF142193E1E8700FD6BA1;
+			productRefGroup = F24AF14C193E1E8700FD6BA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F24AF14A193E1E8700FD6BA1 /* LUTSwift */,
+				F24AF15C193E1E8700FD6BA1 /* LUTSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F24AF149193E1E8700FD6BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24AF155193E1E8700FD6BA1 /* Images.xcassets in Resources */,
+				F24AF158193E1E8700FD6BA1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24AF15B193E1E8700FD6BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BE60E8AC75B4DD5837F353F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5678D26FAE9747DCAE407F8D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F24AF147193E1E8700FD6BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24AF153193E1E8700FD6BA1 /* AppDelegate.swift in Sources */,
+				F24AF151193E1E8700FD6BA1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24AF159193E1E8700FD6BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24AF164193E1E8700FD6BA1 /* LUTSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F24AF15F193E1E8700FD6BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F24AF14A193E1E8700FD6BA1 /* LUTSwift */;
+			targetProxy = F24AF15E193E1E8700FD6BA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F24AF156193E1E8700FD6BA1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F24AF157193E1E8700FD6BA1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F24AF165193E1E8700FD6BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F24AF166193E1E8700FD6BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F24AF168193E1E8700FD6BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CEB27E2967448CA0C8E650 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LUTSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LUTSwift/LUTSwift-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		F24AF169193E1E8700FD6BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CEB27E2967448CA0C8E650 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LUTSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LUTSwift/LUTSwift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		F24AF16B193E1E8700FD6BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LUTSwift.app/Contents/MacOS/LUTSwift";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LUTSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		F24AF16C193E1E8700FD6BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LUTSwift.app/Contents/MacOS/LUTSwift";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LUTSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F24AF146193E1E8700FD6BA1 /* Build configuration list for PBXProject "LUTSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24AF165193E1E8700FD6BA1 /* Debug */,
+				F24AF166193E1E8700FD6BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24AF167193E1E8700FD6BA1 /* Build configuration list for PBXNativeTarget "LUTSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24AF168193E1E8700FD6BA1 /* Debug */,
+				F24AF169193E1E8700FD6BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24AF16A193E1E8700FD6BA1 /* Build configuration list for PBXNativeTarget "LUTSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24AF16B193E1E8700FD6BA1 /* Debug */,
+				F24AF16C193E1E8700FD6BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F24AF143193E1E8700FD6BA1 /* Project object */;
+}

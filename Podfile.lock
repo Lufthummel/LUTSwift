@@ -1,0 +1,26 @@
+PODS:
+  - CocoaLUT (0.1.5):
+    - M13OrderedDictionary
+    - RegExCategories
+    - SAMCubicSpline
+    - XMLDictionary
+  - M13OrderedDictionary (1.0.2)
+  - RegExCategories (1.0)
+  - SAMCubicSpline (0.1.1)
+  - XMLDictionary (1.4)
+
+DEPENDENCIES:
+  - CocoaLUT (from `../CocoaLUT`)
+
+EXTERNAL SOURCES:
+  CocoaLUT:
+    :path: ../CocoaLUT
+
+SPEC CHECKSUMS:
+  CocoaLUT: d2b4ef9b66fbb916bbc990ce430c83f8896bb195
+  M13OrderedDictionary: a3adfce26e271ef03cf0d9cedc7d85a4f1ae5806
+  RegExCategories: a6410301023ff81bd047c05fd8691d24ca5c7ea9
+  SAMCubicSpline: 60dd7d3e8cfb35fc8c0ab9cb6a6383dbe43cc3b1
+  XMLDictionary: 735e81b9a043e220b0d24e9d4f16719606f2e0fc
+
+COCOAPODS: 0.33.1
