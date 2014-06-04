@@ -14,11 +14,16 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="LUTSwift" customModuleProvider="target">
             <connections>
-                <outlet property="lut3DSceneView" destination="1rF-Ov-6fk" id="361-ku-UV3"/>
+                <outlet property="previewSceneViewController" destination="q1A-57-nmF" id="h2y-tV-gy3"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="q1A-57-nmF" customClass="LUTPreviewSceneViewController">
+            <connections>
+                <outlet property="sceneView" destination="1rF-Ov-6fk" id="4P9-oD-Kdp"/>
+            </connections>
+        </customObject>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="LUTSwift" id="1Xt-HY-uBw">
@@ -671,24 +676,36 @@
         <window title="LUTSwift" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="502" height="435"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="435"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <sceneView loops="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1rF-Ov-6fk" customClass="LUTPreviewSceneView">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                    <sceneView loops="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1rF-Ov-6fk">
+                        <rect key="frame" x="0.0" y="0.0" width="502" height="435"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </sceneView>
+                    <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2LU-VR-k5n">
+                        <rect key="frame" x="18" y="18" width="466" height="20"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="DuW-by-4as"/>
+                        <connections>
+                            <binding destination="q1A-57-nmF" name="value" keyPath="self.animationPercentage" id="RK9-3v-hyK"/>
+                        </connections>
+                    </slider>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="1rF-Ov-6fk" secondAttribute="bottom" id="Dc1-hH-T2Z"/>
                     <constraint firstItem="1rF-Ov-6fk" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="E3h-ST-Kbm"/>
+                    <constraint firstItem="2LU-VR-k5n" firstAttribute="centerX" secondItem="1rF-Ov-6fk" secondAttribute="centerX" id="FnE-Co-aLb"/>
+                    <constraint firstAttribute="bottom" secondItem="2LU-VR-k5n" secondAttribute="bottom" constant="20" symbolic="YES" id="O2Q-Zm-bkm"/>
                     <constraint firstItem="1rF-Ov-6fk" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="Qfk-CB-9UD"/>
                     <constraint firstAttribute="trailing" secondItem="1rF-Ov-6fk" secondAttribute="trailing" id="rrW-hi-WoU"/>
+                    <constraint firstItem="2LU-VR-k5n" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="vtR-bZ-KGP"/>
                 </constraints>
             </view>
+            <point key="canvasLocation" x="15" y="96.5"/>
         </window>
+        <userDefaultsController representsSharedInstance="YES" id="3CL-Kt-k5U"/>
     </objects>
 </document>
