@@ -12,34 +12,23 @@ import SceneKit
 class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow
-    
     @IBOutlet var previewSceneViewController : LUTPreviewSceneViewController
-    
     var lut: LUT
     
     init() {
-        self.lut = LUT3D(identityOfSize: 32, inputLowerBound: 0, inputUpperBound: 1)
-        self.lut = LUTColorTransferFunction.transformedLUTFromLUT(self.lut,
-                                                                fromColorTransferFunction: LUTColorTransferFunction.knownColorTransferFunctions()["Cineon"] as LUTColorTransferFunction,
-                                                                toColorTransferFunction: LUTColorTransferFunction.knownColorTransferFunctions()["Linear"] as LUTColorTransferFunction)
-        
+        lut = LUT3D(identityOfSize: 32, inputLowerBound: 0, inputUpperBound: 1)
+        let cineon = LUTColorTransferFunction.knownColorTransferFunctions()["Cineon"] as LUTColorTransferFunction
+        let linear = LUTColorTransferFunction.knownColorTransferFunctions()["Linear"] as LUTColorTransferFunction
+        lut = LUTColorTransferFunction.transformedLUTFromLUT(lut, fromColorTransferFunction:cineon, toColorTransferFunction:linear)
     }
-
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
-        self.previewSceneViewController.setSceneWithLUT(self.lut);
-    }
-
-    func applicationWillTerminate(aNotification: NSNotification?) {
-        // Insert code here to tear down your application
+        previewSceneViewController.setSceneWithLUT(lut);
     }
     
     func applicationShouldTerminateAfterLastWindowClosed(application: NSApplication?) -> Bool {
         return true
     }
     
-
-
 }
 
