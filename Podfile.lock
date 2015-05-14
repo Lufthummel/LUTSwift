@@ -8,7 +8,7 @@ PODS:
   - MustOverride (1.1)
   - RegExCategories (1.0)
   - VVLUT1DFilter (1.0.5)
-  - VVSceneLinearImageRep (0.1.2)
+  - VVSceneLinearImageRep (0.1.3)
   - XMLDictionary (1.4)
 
 DEPENDENCIES:
@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   MustOverride: feccf16d11e574a814a03d940b9f4d7b4a759ce0
   RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
   VVLUT1DFilter: 1b978646438c49c84909be63a776c5e0207f0fa4
-  VVSceneLinearImageRep: cea25a976fc320a009b70b116e3769b27dc45597
+  VVSceneLinearImageRep: 90ef78b005db20b43a5b7ace1f60018c1cac5dfa
   XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
 
 COCOAPODS: 0.37.1
