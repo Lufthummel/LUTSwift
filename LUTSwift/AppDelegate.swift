@@ -2,34 +2,33 @@
 //  AppDelegate.swift
 //  LUTSwift
 //
-//  Created by Greg Cotten on 6/3/14.
-//  Copyright (c) 2014 Greg Cotten. All rights reserved.
+//  Created by Greg Cotten on 5/13/15.
+//  Copyright (c) 2015 Greg Cotten. All rights reserved.
 //
 
 import Cocoa
-import SceneKit
+import CocoaLUT
 
+@NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-                            
-    @IBOutlet var window: NSWindow
-    @IBOutlet var previewSceneViewController : LUTPreviewSceneViewController
+
+    @IBOutlet weak var window: NSWindow!
+
+    @IBOutlet weak var previewScene: LUTPreviewSceneViewController!
     
-    var lut: LUT
-    
-    init() {
-        lut = LUT3D(identityOfSize: 32, inputLowerBound: 0, inputUpperBound: 1)
-        let cineon = LUTColorTransferFunction.knownColorTransferFunctions()["Rec. 709"] as LUTColorTransferFunction
-        let linear = LUTColorTransferFunction.knownColorTransferFunctions()["Linear"] as LUTColorTransferFunction
-        lut = LUTColorTransferFunction.transformedLUTFromLUT(lut, fromColorTransferFunction:cineon, toColorTransferFunction:linear)
+
+    func applicationDidFinishLaunching(aNotification: NSNotification) {
+        // Insert code here to initialize your application
+
+        let identity33 = LUT3D(identityOfSize: 33, inputLowerBound: 0, inputUpperBound: 1);
+
+        previewScene.setSceneWithLUT(identity33.LUT3DByApplyingFalseColor())
     }
 
-    func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        previewSceneViewController.setSceneWithLUT(lut);
+    func applicationWillTerminate(aNotification: NSNotification) {
+        // Insert code here to tear down your application
     }
-    
-    func applicationShouldTerminateAfterLastWindowClosed(application: NSApplication?) -> Bool {
-        return true
-    }
-    
+
+
 }
 

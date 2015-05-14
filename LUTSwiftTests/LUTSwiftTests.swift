@@ -2,10 +2,11 @@
 //  LUTSwiftTests.swift
 //  LUTSwiftTests
 //
-//  Created by Greg Cotten on 6/3/14.
-//  Copyright (c) 2014 Greg Cotten. All rights reserved.
+//  Created by Greg Cotten on 5/13/15.
+//  Copyright (c) 2015 Greg Cotten. All rights reserved.
 //
 
+import Cocoa
 import XCTest
 
 class LUTSwiftTests: XCTestCase {

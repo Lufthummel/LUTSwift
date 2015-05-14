@@ -1,26 +1,32 @@
 PODS:
-  - CocoaLUT (0.1.5):
+  - CocoaLUT (0.2.29-pre):
     - M13OrderedDictionary
+    - MustOverride
     - RegExCategories
-    - SAMCubicSpline
     - XMLDictionary
-  - M13OrderedDictionary (1.0.2)
+  - M13OrderedDictionary (1.0.6)
+  - MustOverride (1.1)
   - RegExCategories (1.0)
-  - SAMCubicSpline (0.1.1)
+  - VVLUT1DFilter (1.0.5)
+  - VVSceneLinearImageRep (0.1.2)
   - XMLDictionary (1.4)
 
 DEPENDENCIES:
   - CocoaLUT (from `../CocoaLUT`)
+  - VVLUT1DFilter
+  - VVSceneLinearImageRep
 
 EXTERNAL SOURCES:
   CocoaLUT:
     :path: ../CocoaLUT
 
 SPEC CHECKSUMS:
-  CocoaLUT: d2b4ef9b66fbb916bbc990ce430c83f8896bb195
-  M13OrderedDictionary: a3adfce26e271ef03cf0d9cedc7d85a4f1ae5806
-  RegExCategories: a6410301023ff81bd047c05fd8691d24ca5c7ea9
-  SAMCubicSpline: 60dd7d3e8cfb35fc8c0ab9cb6a6383dbe43cc3b1
-  XMLDictionary: 735e81b9a043e220b0d24e9d4f16719606f2e0fc
+  CocoaLUT: 69827b98678712e6b3f9a29d9304403a50c99ed0
+  M13OrderedDictionary: ca1bb2d743fd64500ffabee811d4bf2d0a65c908
+  MustOverride: feccf16d11e574a814a03d940b9f4d7b4a759ce0
+  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
+  VVLUT1DFilter: 1b978646438c49c84909be63a776c5e0207f0fa4
+  VVSceneLinearImageRep: cea25a976fc320a009b70b116e3769b27dc45597
+  XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.37.1
