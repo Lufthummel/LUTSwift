@@ -21,8 +21,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
 
         let identity33 = LUT3D(identityOfSize: 33, inputLowerBound: 0, inputUpperBound: 1);
+        let cineon = LUTColorTransferFunction.knownColorTransferFunctions().filter(){
+            ($0 as! LUTColorTransferFunction).name == "Cineon"
+        }[0] as! LUTColorTransferFunction
+        let linear = LUTColorTransferFunction.linearTransferFunction()
 
-        previewScene.setSceneWithLUT(identity33.LUT3DByApplyingFalseColor())
+        previewScene.setSceneWithLUT(identity33.LUT3DByConvertingToMonoWithConversionMethod(LUTMonoConversionMethod.AverageRGB))
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
